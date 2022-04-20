@@ -1,0 +1,71 @@
+name: Bug report 🐛
+description: Create a report to help us improve
+labels: [ "bug", "new" ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! Please provide as much information as you can to help us diagnose and fix this issue.
+
+        If something is unclear or you don't have the info, do your best to fill it out. An amazing bug is better than a bad bug report, but even a bad bug report is better than no bug report! 🐛
+  - type: textarea
+    id: description
+    attributes:
+      label: "Describe the bug"
+      description:  A clear and concise description of what the bug is.
+      placeholder: Tell us what you saw!
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce the bug
+      description: A list of concrete steps that we can take to reproduce the steps.
+      placeholder:  |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: When the thingamaflorp shlurps the fligmaflop, I'd expected ...
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, error output, etc.
+      description: Do you have any logs, printouts, etc that might be useful for us?
+      placeholder: "[2022-04-20T16:14:48+02:00] I created this file."
+      render: "bash"
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, do you have any screenshots that would help clarify the issue?
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Do you have any additional context that would help us investigate this issue? Anything we should know?
+
+  - type: input
+    id: unleash-version
+    attributes:
+      label: Unleash version
+      description: What version of Unleash are you running?
+
+  - type: dropdown
+    id: subscription-type
+    attributes:
+      label: Subscription type
+      description: Are you an open source, pro, or enterprise user?
+      multiple: false
+      options:
+        - "Open source"
+        - "Pro"
+        - "Enterprise"
