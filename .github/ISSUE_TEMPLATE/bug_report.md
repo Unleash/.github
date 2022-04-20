@@ -23,7 +23,7 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
+**Unleash information (please complete the following information):**
  - Unleash version: [e.g. 4.10.0]
  - Unleash subscription type: [e.g. open source, pro, enterprise]
 
