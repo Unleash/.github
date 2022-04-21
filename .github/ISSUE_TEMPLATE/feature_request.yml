@@ -12,7 +12,8 @@ body:
     attributes:
       label: "Describe the feature request"
       description:  What is the feature you would like to see implemented in Unleash?
-      placeholder:
+      placeholder: |
+        I want Unleash to make me tea. With sugar. Lots of sugar. And milk!
     validations:
       required: true
 
@@ -36,4 +37,4 @@ body:
         Have you thought about how we may implement the feature?
         Have you thought about alternative solutions?
         Any drawbacks or advantages of the solutions?
-      placeholder: If you twist the knuckleburf and swizzle the huckleshuck while simultaneously ...
+      placeholder: You could twist the knuckleburf and swizzle the huckleshuck while simultaneously ...
