@@ -27,7 +27,7 @@ body:
         Help us understand why this feature matters to you.
         Feel free to include images or any other material that may provide more insight.
       placeholder:  |
-        A long time ago, in a galaxy far, far away ...
+        A long time ago in a galaxy far, far away ...
 
   - type: textarea
     id: solutions
