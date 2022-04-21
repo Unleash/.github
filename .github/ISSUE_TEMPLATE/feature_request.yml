@@ -1,0 +1,39 @@
+name: Feature request
+description: Create a report to help us improve
+labels: [ "enhancement", "new" ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a feature request! Would you mind telling us a bit more about what you'd like to see?
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Describe the feature request"
+      description:  What is the feature you would like to see implemented in Unleash?
+      placeholder:
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Background
+      description: |
+        Why do you want this feature in Unleash?
+        Is it related to a problem of some sort?
+        Help us understand why this feature matters to you.
+        Feel free to include images or any other material that may provide more insight.
+      placeholder:  |
+        A long time ago, in a galaxy far, far away ...
+
+  - type: textarea
+    id: solutions
+    attributes:
+      label: Solution suggestions
+      description: |
+        Have you thought about how we may implement the feature?
+        Have you thought about alternative solutions?
+        Any drawbacks or advantages of the solutions?
+      placeholder: If you twist the knuckleburf and swizzle the huckleshuck while simultaneously ...

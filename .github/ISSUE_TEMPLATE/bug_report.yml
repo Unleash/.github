@@ -7,7 +7,7 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report! Please provide as much information as you can to help us diagnose and fix this issue.
 
-        If something is unclear or you don't have the info, do your best to fill it out. An amazing bug is better than a bad bug report, but even a bad bug report is better than no bug report! 🐛
+        If something is unclear or you don't have the info, just fill out as much as you can. An amazing bug report is better than a bad bug report, but even a bad bug report is better than no bug report! 🤓
   - type: textarea
     id: description
     attributes:
@@ -69,3 +69,19 @@ body:
         - "Open source"
         - "Pro"
         - "Enterprise"
+
+  - type: dropdown
+    id: hosting-situation
+    attributes:
+      label: Hosting type
+      description: Are you hosting Unleash yourself or is Unleash hosting it for you?
+      multiple: false
+      options:
+        - "Self-hosted"
+        - "Hosted by Unleash"
+
+  - type: input
+    id: sdk-information
+    attributes:
+      label: SDK information (language and version)
+      description: "If applicable: does this bug present itself in a client SDK? More than one? What version(s)?"
