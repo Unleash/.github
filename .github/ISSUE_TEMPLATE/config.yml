@@ -1,4 +1,4 @@
-blank_issue_enabled: false,
+blank_issues_enabled: false
 contact_links:
   - name: Unleash community Slack
     url: https://slack.unleash.run
