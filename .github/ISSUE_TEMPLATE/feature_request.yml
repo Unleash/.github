@@ -22,9 +22,8 @@ body:
     attributes:
       label: Background
       description: |
-        Why do you want this feature in Unleash?
-        Is it related to a problem of some sort?
-        Help us understand why this feature matters to you.
+        Help us understand why this feature matters to you: Why do you want this feature in Unleash? Is it related to a problem of some sort?
+
         Feel free to include images or any other material that may provide more insight.
       placeholder:  |
         A long time ago in a galaxy far, far away ...
@@ -34,7 +33,5 @@ body:
     attributes:
       label: Solution suggestions
       description: |
-        Have you thought about how we may implement the feature?
-        Have you thought about alternative solutions?
-        Any drawbacks or advantages of the solutions?
+        Have you thought about how we may implement the feature? Have you thought about alternative solutions? Any drawbacks or advantages of the solutions?
       placeholder: You could twist the knuckleburf and swizzle the huckleshuck while simultaneously ...
