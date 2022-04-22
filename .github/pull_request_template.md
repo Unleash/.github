@@ -1,7 +1,7 @@
 <!-- Thanks for creating a PR! To make it easier for reviewers and everyone else to understand what your changes relate to, please add some relevant content to the headings below. Feel free to ignore or delete sections that you don't think are relevant. Thank you! ❤️ -->
 
 ## About the changes
-<!-- Describe the changes introduced. What are they and why are they being introduced? -->
+<!-- Describe the changes introduced. What are they and why are they being introduced? Feel free to also add screenshots or steps to view the changes if they're visual. -->
 
 <!-- Does it close an issue? Multiple? -->
 Closes # .
