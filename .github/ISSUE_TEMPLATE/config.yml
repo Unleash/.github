@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: GitHub discussions
+    url: https://github.com/orgs/Unleash/discussions
+    about: Ask questions right here on GitHub
   - name: Unleash community Slack
     url: https://slack.unleash.run
-    about: Ask questions and come hang out with the maintainers and the community.
+    about: Ask questions and come hang out with the maintainers and the community
