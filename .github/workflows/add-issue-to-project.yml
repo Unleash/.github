@@ -1,0 +1,16 @@
+name: Add new issues to list of issues
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/Unleash/projects/8
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
