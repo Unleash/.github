@@ -1,6 +1,7 @@
-name: Add new issues to list of issues
+name: Add new item to project board
 
 on:
+  workflow_call:
   issues:
     types:
       - opened
