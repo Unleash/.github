@@ -9,7 +9,7 @@ exemptLabels:
 
 exemptAssignees: true
 
-staleLabel: wontfix
+staleLabel: stale
 
 pulls:
   markComment: >
