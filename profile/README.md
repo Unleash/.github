@@ -30,7 +30,7 @@ Create with Freedom, Release With Confidence.
 ## ✨ Connect with Us</br>
 Get involved with a vibrant community of users and contributors. Check out what others have built with Unleash, start learning by going through Unleash How-to Guides or get involved as a contributor.
 
-[Leave us a Star](https://github.com/Unleash/unleash) on the Unleash Repo 🌟 </br>
+[Leave us a Star](https://github.com/Unleash/unleash) on the Unleash Repo. 🌟 </br>
 [GitHub Discussions](https://github.com/Unleash/unleash/discussions) - Place to discuss, ask questions and find answers, show your Unleash project and get feedback. 🗣️ </br>
 [Slack](https://unleash-community.slack.com/) -  Come chat with the Unleash community including the core team. 💬 </br>
 [Community Homepage](https://www.getunleash.io/unleash-community) - Check out the ways you can be a valuable member of the community. 🛰️ </br>
