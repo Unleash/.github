@@ -6,9 +6,11 @@
 <!-- Does it close an issue? Multiple? -->
 Closes # .
 
-<!-- (For internal contributors): Does it relate to an issue on public roadmap (https://github.com/orgs/Unleash/projects/5)? -->
+<!-- (For internal contributors): Does it relate to an issue on public roadmap (https://github.com/orgs/Unleash/projects/10)? -->
+<!--
+Relates to roadmap item: https://github.com/Unleash/unleash/issues/<ISSUE_ID>
+-->
 
-<!-- Relates to roadmap item:  -->
 
 ### Important files
 <!-- PRs can contain a lot of changes, but not all changes are equally important. Where should a reviewer start looking to get an overview of the changes? Are any files particularly important?  -->
