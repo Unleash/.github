@@ -1,6 +1,6 @@
 name: Feature request
 description: Create a report to help us improve
-labels: [ "enhancement", "new" ]
+labels: [ "enhancement" ]
 body:
   - type: markdown
     attributes:
