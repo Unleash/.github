@@ -6,16 +6,13 @@
 
 ![Unleash marketing image showing "Flexible segmentation", "Feature toggles", "Projects" and that Unleash integrates with many programming languages.](https://user-images.githubusercontent.com/18158596/196740001-569c6951-e989-4f7e-b31b-def5c40fa2aa.png)
 
-
-<!-- <img width="600" alt="Unleash Logo" src="https://user-images.githubusercontent.com/18158596/196730085-d168ff9e-8b1a-4790-8219-882336df6479.png"> -->
-
 **Unleash started as a side project.** We wanted to fill an essential space in the development stack and control releases. At first, we were just a few contributors, but together we built a foundation for the amazing community that you see today. 🫂
 
 We love that you — our community — have the freedom to work with our product in any way you want. Together we can test, experiment, and create a well-rounded product that covers a ton of different use cases. We're super proud of you 🙏
 
 That's enough about us. Have fun. Be kind. Let's **Unleash** great software together. 💪
 
-> [📈 See our roadmap →](https://github.com/orgs/Unleash/projects/5)
+> [📈 Check out our roadmap →](https://github.com/orgs/Unleash/projects/10)
 
 ## 🚀 Learn about Unleash
 Create with Freedom, Release With Confidence.
