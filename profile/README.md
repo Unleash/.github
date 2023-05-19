@@ -1,3 +1,10 @@
+<h3 align="center">
+  <a href="https://github.com/orgs/Unleash/discussions/3813">
+    📣 Meet us in Kraków on June 1, 2023 🇵🇱
+  </a>
+</h3> 
+
+
 ![Unleash GitHub banner](https://user-images.githubusercontent.com/18158596/196736157-b20a5fbf-74ac-47cd-a991-fe6e2d2bc960.png)
 
 <p align="center">
