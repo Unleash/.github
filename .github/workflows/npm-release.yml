@@ -49,6 +49,7 @@ jobs:
           echo "PACKAGE_VERSION=$PACKAGE_VERSION" >> $GITHUB_ENV
 
       - name: 🔖 NPM version
+        # Yarn, because NPM doen't work with git when in a subdirectory
         run: yarn version --new-version ${PACKAGE_VERSION} --no-commit-hooks
         working-directory: ${{ inputs.working-directory }}
         env:
@@ -66,6 +67,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
 
       - name: 📝 Publish GitHub Release
+        # https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#create-a-release
         run: |
           WORKFLOW_RELEASE_PRERELEASE=$(node -p "'${{ inputs.tag }}' !== 'latest'")
           WORKFLOW_RELEASE_BODY=$(
