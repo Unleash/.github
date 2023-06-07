@@ -15,14 +15,10 @@ on:
         description: "Directory of package.json"
         type: string
         default: .
-      build-command:
+      setup-command:
         description: "Command to run before publishing"
         type: string
-        default: "yarn install --frozen-lockfile && yarn build"
-      node-version:
-        description: "Node.js version to use"
-        type: string
-        default: "18.x"
+        default: "yarn install --frozen-lockfile"
     secrets:
       GH_ACCESS_TOKEN:
         description: "GitHub token with repository write access"
@@ -47,7 +43,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ inputs.node-version }}
+          node-version: 18
           registry-url: "https://registry.npmjs.org"
 
       - name: Set version variable
@@ -56,11 +52,10 @@ jobs:
           PACKAGE_VERSION=$(node -p "'${{ inputs.version }}'.replace(/^v/, '')")
           echo "PACKAGE_VERSION=$PACKAGE_VERSION" >> $GITHUB_ENV
 
-      - name: 🏗️ Build
-        run: ${{ inputs.build-command }}
-        working-directory: ${{ inputs.working-directory }}
+      - name: 🏗️ Setup
+        run: ${{ inputs.setup-command }}
 
-      - name: 🔖 NPM version
+      - name: 🔖 Create version
         # Yarn, because NPM doen't work with git when in a subdirectory
         run: yarn version --new-version ${PACKAGE_VERSION} --no-commit-hooks
         working-directory: ${{ inputs.working-directory }}
