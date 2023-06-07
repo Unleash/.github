@@ -52,8 +52,6 @@ jobs:
         # Yarn, because NPM doen't work with git when in a subdirectory
         run: yarn version --new-version ${PACKAGE_VERSION} --no-commit-hooks
         working-directory: ${{ inputs.working-directory }}
-        env:
-          CI: true
 
       - name: 🚢 Push to git
         run: |
