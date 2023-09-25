@@ -11,7 +11,10 @@ on:
 
 jobs:
   add-to-project:
+    name: Add issue to project
     runs-on: ubuntu-latest
     steps:
-      - name: Print message to console
-        run: echo "::notice Not adding this item to the board. This should now be handled automatically by the board itself. Delete this job if it is still active in october."
+      - uses: actions/add-to-project@v0.1.0
+        with:
+          project-url: https://github.com/orgs/Unleash/projects/8
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
