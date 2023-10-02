@@ -6,9 +6,9 @@
 
 ![Unleash marketing image showing "Flexible segmentation", "Feature toggles", "Projects" and that Unleash integrates with many programming languages.](https://user-images.githubusercontent.com/18158596/196740001-569c6951-e989-4f7e-b31b-def5c40fa2aa.png)
 
-**Unleash started as a side project.** We wanted to fill an essential space in the development stack and control releases. At first, we were just a few contributors, but together we built a foundation for the amazing community that you see today. 🫂
+**Unleash is the largest and fastest growing open source feature flag project in the world.** We exist to fill an essential space in the development stack and decouple code deployment from releasing features. At first, we were a side project, then just a few contributors, and now we are many. Together we have built an amazing product and community. 🫂
 
-We love that you — our community — have the freedom to work with our product in any way you want. Together we can test, experiment, and create a well-rounded product that covers a ton of different use cases. We're super proud of you 🙏
+We love that you — our community — have the freedom to work with our product in any way you want. Together we can test, experiment, and create a well-rounded product that covers a ton of different use cases. We're super proud of all we've done together 🙏
 
 That's enough about us. Have fun. Be kind. Let's **Unleash** great software together. 💪
 
