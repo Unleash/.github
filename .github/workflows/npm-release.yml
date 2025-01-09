@@ -20,6 +20,12 @@ on:
         type: string
         default: "yarn install --frozen-lockfile"
     secrets:
+      UNLEASH_BOT_APP_ID:
+        description: "The app ID for the Unleash bot"
+        required: true
+      UNLEASH_BOT_PRIVATE_KEY:
+        description: "The private key for the Unleash bot"
+        required: true
       NPM_ACCESS_TOKEN:
         description: "NPM token allowed to push to the registry"
         required: true
