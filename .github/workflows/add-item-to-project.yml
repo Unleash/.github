@@ -2,13 +2,6 @@ name: Add new item to project board
 
 on:
   workflow_call:
-    secrets:
-      UNLEASH_BOT_APP_ID:
-        description: "The app ID for the Unleash bot"
-        required: true
-      UNLEASH_BOT_PRIVATE_KEY:
-        description: "The private key for the Unleash bot"
-        required: true
   issues:
     types:
       - opened
@@ -21,14 +14,7 @@ jobs:
     name: Add issue to project
     runs-on: ubuntu-latest
     steps:
-      - name: Generate token
-        id: generate-token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.UNLEASH_BOT_APP_ID }}
-          private-key: ${{ secrets.UNLEASH_BOT_PRIVATE_KEY }}
-
       - uses: actions/add-to-project@v0.1.0
         with:
           project-url: https://github.com/orgs/Unleash/projects/8
-          github-token: ${{ steps.generate-token.outputs.token }}
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
