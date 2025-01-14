@@ -41,14 +41,9 @@ jobs:
           app-id: ${{ secrets.UNLEASH_BOT_APP_ID }}
           private-key: ${{ secrets.UNLEASH_BOT_PRIVATE_KEY }}
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
-
-      - name: Setup git config
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
 
       - name: Use Node.js
         uses: actions/setup-node@v4
