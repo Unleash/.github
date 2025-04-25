@@ -12,7 +12,7 @@ We love that you — our community — have the freedom to work with our product
 
 That's enough about us. Have fun. Be kind. Let's **Unleash** great software together. 
 
-> [Check out our roadmap →](https://github.com/orgs/Unleash/projects/10)
+> [Check out the Unleash Product Vison for 2025 →](https://www.getunleash.io/product-vision)
 
 ## Learn about Unleash
 Create with Freedom, Release With Confidence.
