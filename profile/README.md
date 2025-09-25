@@ -30,7 +30,7 @@ Get involved with a vibrant community of users and contributors. Check out what 
 
 - [Leave us a Star](https://github.com/Unleash/unleash) on the Unleash Repo. 
 - [GitHub Discussions](https://github.com/Unleash/unleash/discussions) - Place to discuss, ask questions, find answers, show your Unleash project, and get feedback. 
-- [Slack](https://unleash-community.slack.com/) -  Come chat with the Unleash communit,y including the core team. 
+- [Slack](https://unleash-community.slack.com/) -  Come chat with the Unleash community, including the core team. 
 - [Community Homepage](https://www.getunleash.io/unleash-community) - Check out the ways you can be a valuable member of the community. 
 <!-- - [Events at Unleash]() - Learn more about new Events for the Unleash Community.  -->
 - Contributing Guidelines coming soon. 
