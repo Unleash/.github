@@ -20,7 +20,7 @@ Create with Freedom, Release With Confidence.
 - [Main Open Source Repo](https://github.com/Unleash/unleash) - Unleash's Open Source codebase. 
 - [Docker Hub](https://hub.docker.com/r/unleashorg/unleash-server) - Unleash containerized, just for you. 
 - [Unleash Docs](https://docs.getunleash.io) - Dive deeper into the docs. 
-- [Tutorials and guides](https://docs.getunleash.io/how-to](https://docs.getunleash.io/topics/feature-flags/feature-flag-best-practices) - Explore best practices and step-by-step tutorials that help you integrate Unleash into your stack.
+- [Tutorials and Guides](https://docs.getunleash.io/topics/feature-flags/feature-flag-best-practices) - Explore best practices and step-by-step tutorials that help you integrate Unleash into your stack.
 - [Open Live Demo](https://www.getunleash.io/interactive-demo) - Unleash Official demo application using Unleash + Next.js
 - [Feature Flagging - Why and How to Add to Your Software](https://youtu.be/-yHZ9uLVSp4) - Need something visual to get started? Here's something to watch. 
 
