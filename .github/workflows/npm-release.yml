@@ -26,9 +26,6 @@ on:
       UNLEASH_BOT_PRIVATE_KEY:
         description: "The private key for the Unleash bot"
         required: true
-      NPM_ACCESS_TOKEN:
-        description: "NPM token allowed to push to the registry"
-        required: true
 
 jobs:
   release:
@@ -41,7 +38,7 @@ jobs:
           app-id: ${{ secrets.UNLEASH_BOT_APP_ID }}
           private-key: ${{ secrets.UNLEASH_BOT_PRIVATE_KEY }}
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           token: ${{ steps.generate-token.outputs.token }}
 
@@ -78,8 +75,6 @@ jobs:
       - name: 📦️ Publish to NPM
         run: npm publish --access public --tag ${{ inputs.tag }}
         working-directory: ${{ inputs.working-directory }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
 
       - name: 📝 Publish GitHub Release
         # https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#create-a-release
