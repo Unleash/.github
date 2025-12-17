@@ -26,9 +26,10 @@ on:
       UNLEASH_BOT_PRIVATE_KEY:
         description: "The private key for the Unleash bot"
         required: true
-      NPM_ACCESS_TOKEN:
-        description: "NPM token allowed to push to the registry"
-        required: true
+
+permissions:
+  id-token: write
+  contents: write
 
 jobs:
   release:
@@ -41,7 +42,7 @@ jobs:
           app-id: ${{ secrets.UNLEASH_BOT_APP_ID }}
           private-key: ${{ secrets.UNLEASH_BOT_PRIVATE_KEY }}
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           token: ${{ steps.generate-token.outputs.token }}
 
@@ -51,10 +52,13 @@ jobs:
           git config user.email "<>"
 
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 20
           registry-url: "https://registry.npmjs.org"
+
+      - name: Install latest npm version to support trusted publishing
+        run: npm install -g npm@latest
 
       - name: Set version variable
         # prevent double v "vv1.2.3" tags, go to package directory
@@ -78,27 +82,21 @@ jobs:
       - name: 📦️ Publish to NPM
         run: npm publish --access public --tag ${{ inputs.tag }}
         working-directory: ${{ inputs.working-directory }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
 
       - name: 📝 Publish GitHub Release
+        shell: bash
+        # uses gh cli tool to create release
         # https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28#create-a-release
         run: |
+          set -euo pipefail
+
           WORKFLOW_RELEASE_PRERELEASE=$(node -p "'${{ inputs.tag }}' !== 'latest'")
-          WORKFLOW_RELEASE_BODY=$(
-          cat <<-_EOT_
-          {
-            "tag_name": "v${PACKAGE_VERSION}",
-            "name": "v${PACKAGE_VERSION}",
-            "prerelease": ${WORKFLOW_RELEASE_PRERELEASE},
-            "generate_release_notes": true
-          }
-          _EOT_
-          )
-          curl -L --fail-with-body \
-            -X POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ steps.generate-token.outputs.token }}" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            "https://api.github.com/repos/$GITHUB_REPOSITORY/releases" \
-            -d "$WORKFLOW_RELEASE_BODY"
+          FLAGS=()
+
+          if [ "$WORKFLOW_RELEASE_PRERELEASE" = "true" ]; then
+            FLAGS+=("--prerelease")
+          else
+            FLAGS+=("--latest")
+          fi
+
+          gh release create v${PACKAGE_VERSION} --generate-notes --title "v${PACKAGE_VERSION}" "${FLAGS[@]}"
