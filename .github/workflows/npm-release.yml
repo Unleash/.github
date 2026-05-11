@@ -18,7 +18,7 @@ on:
       setup-command:
         description: "Command to run before publishing"
         type: string
-        default: "yarn install --frozen-lockfile"
+        default: "pnpm install --frozen-lockfile"
     secrets:
       UNLEASH_BOT_APP_ID:
         description: "The app ID for the Unleash bot"
@@ -60,6 +60,9 @@ jobs:
       - name: Install latest npm version to support trusted publishing
         run: npm install -g npm@latest
 
+      - name: Enable pnpm
+        run: corepack enable pnpm
+
       - name: Set version variable
         # prevent double v "vv1.2.3" tags, go to package directory
         run: |
@@ -70,8 +73,8 @@ jobs:
         run: ${{ inputs.setup-command }}
 
       - name: 🔖 Create version
-        # Yarn, because NPM doen't work with git when in a subdirectory
-        run: yarn version --new-version ${PACKAGE_VERSION} --no-commit-hooks
+        # pnpm, because npm doesn't work with git when in a subdirectory
+        run: pnpm version ${PACKAGE_VERSION} --no-commit-hooks
         working-directory: ${{ inputs.working-directory }}
 
       - name: 🚢 Push to git
