@@ -58,7 +58,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - name: Install latest npm version to support trusted publishing
-        run: npm install -g npm@latest
+        run: npm install -g npm@11.14.0
 
       - name: Enable pnpm
         run: corepack enable pnpm
