@@ -17,7 +17,7 @@ Unleash is deployed by some of the largest organizations in the world to manage 
 | **Open Source** | **Unleash Enterprise** |
 | :--- | :--- |
 | Self-hosted. Perfect for developers and small teams. | Managed or self-hosted. Includes the full Enterprise feature-set, such as SSO, RBAC, SLA support, and advanced security. |
-| [**View the open source codebase**](https://github.com/Unleash/unleash) | [**Start free 14-day trial**](https://www.getunleash.io/plans) |
+| [**View the open source codebase**](https://github.com/Unleash/unleash) | [**Start free 14-day trial**](https://www.getunleash.io/pricing) |
 
 ## Resources
 
